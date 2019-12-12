@@ -1,0 +1,352 @@
+*  {box-sizing: border-box;}
+@media (min-width: 1000px)
+
+{
+    body {width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Lato', sans-serif;}
+    h2,h3{
+        color: rgb(41, 74, 93);
+    }        
+    #header
+    {
+        padding-bottom: 12%;
+    }
+    #logo
+    {
+    float: left;
+    width: 15% 
+    }
+    #menu
+    {
+        float: left;
+        text-align: center;
+        margin-top: 3%;
+        margin-left: 10%;
+    }
+    #caroulandscape
+    {
+        clear: both;
+        overflow:hidden;
+        height: 300px;
+        width: 100%;
+        position: relative;
+    }
+    .line img
+    {
+        display: none;
+    }
+    #menu li
+    {
+        list-style: none;
+        display: inline-block;
+        padding: 8px;
+    
+    }
+    #menu:hover, #menu li a:hover 
+    {
+        color: rgb(41, 74, 93);
+        
+        
+    }
+    .dropcontenu
+    { 
+        display: none;
+        position: absolute;
+        text-align: center;
+        min-width: 160px;
+        z-index: 1;
+    }
+    li a, .dropbouton
+    {
+        display: inline-block;
+        text-decoration: none;
+        color: black;
+    }
+    .dropcontenu a
+    { 
+        display: block;
+        text-align: left;
+        padding: 10px;
+    }
+    .dropmain:hover .dropcontenu {
+        display: block;
+    }
+    .dropcontenu 
+    {
+    background-color: rgb(233, 232, 232);
+    padding: 10px;
+    }
+    .btncontact1
+    {
+        margin-block: 20px;
+        text-align: center;
+        margin-left: 43%;
+        padding: 5px;
+        width: 175px;
+        border-radius: 12px;
+    }
+    .btncontact1 a 
+    {
+        text-decoration: none;
+    }
+    #caroulandscape1
+    {
+        clear: both;
+        overflow:hidden;
+        height: 300px;
+        width: 100%;
+        position: relative;
+    }
+
+    @keyframes scroll 
+    {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(calc(-250px * 7))}
+        
+    }
+    .slideparcours
+    {
+        animation: scroll  linear infinite;
+        position: absolute;
+        animation-duration: 30s;
+        width: 100%;
+        
+    }
+    .slide1,.slide2,.slide3,.slide4
+    {
+    position: absolute;
+    width: 1000px;
+    height: 300px;
+    }
+    .slide1 img, .slide2 img, .slide3 img, .slide4 img 
+    {
+        width: 100%;
+    }
+    .slide1{left: 0;}
+    .slide2{left: 1000px;}
+    .slide3{left: 2000px;}
+    .slide4{left: 300px;}
+    .indimage
+    {
+        width: 160px;
+        height: 150px;
+    }
+    #intro p, .Sdescription p
+    {
+        text-align: justify;
+    }
+    #secteurintro
+    {
+        display: flex;
+        justify-content: center;
+        
+    }
+    .catégories 
+    {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    margin-left: 2px;
+
+    }
+    .catégories h2
+    {
+        text-align: center;
+    }
+    .enattendimg
+    {
+    background-color: blue;
+    width: 160px;
+    height:150px;
+    }
+    .btn2, .btncontact1
+    {
+        border-radius: 12px;
+        padding: 5px;
+        background-color: rgb(41, 74, 93);
+        color:white;
+    }
+    .btn2 a, .btncontact1 a, .btn3 a
+    {
+        text-decoration: none;
+        color:white;
+    }
+    .btn2:hover :active,.btn3:hover :active
+    {
+        background-color: rgb(41, 74, 93);
+        color:white;
+    }
+    .btn3
+    {
+        border-radius: 12px;
+        padding: 5px;
+        width: 150px; 
+        background-color: rgb(41, 74, 93);
+        color:white;
+        margin-left: 77%;
+    }
+    
+    .Sdescription
+    {
+        margin: 0 12px;
+    }
+    #titrelandscape
+    {
+        clear: both;
+    }
+    .titre1
+    {
+        width: 100%;
+    }
+    #pieddepage
+    {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        padding-top: 20px;
+    }
+    /********************** page service_carrousel ***********************/
+    .carousel-wrapper {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;       
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+        
+    }
+
+    .carousel-wrapper .carousel-item {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 15px 25px;
+        opacity: 0;
+        transition: all 0.5s ease-in-out;
+       
+    }
+
+    .carousel-wrapper .carousel-item .arrow {
+        position: absolute;
+        top: 0;
+        display: block;
+        width: 50px;
+        top: 39%;
+        height: 25%;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        background: url("./imgs/carousel-arrow-dark.png") 50% 50% / 20px no-repeat;
+    }
+
+    .carousel-wrapper .carousel-item .arrow.arrow-prev {
+        left: -6%;
+    }
+
+    .carousel-wrapper .carousel-item .arrow.arrow-next {
+        right: -3%;
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+
+    /* .carousel-wrapper .carousel-item.light {
+        color: white;
+    } */
+
+    .arrow.arrow-next:hover, .arrow.arrow-prev:hover {
+        background: url("./imgs/carousel-arrow-light.png") 50% 50% / 20px no-repeat;
+        cursor: pointer;
+    }
+
+    @media (max-width: 480px) {
+
+        .carousel-wrapper .carousel-item .arrow,
+        .carousel-wrapper .carousel-item.light .arrow {
+            background-size: 10px;
+            background-position: 10px 50%;
+        }
+    }
+
+    .carousel-wrapper [id^="target-item"] {
+        display: none;
+    }
+
+    .carousel-wrapper .item-1 {
+        z-index: 2;
+        opacity: 1;
+    }
+
+    .carousel-wrapper *:target~.item-1 {
+        opacity: 0;
+    }
+
+    .carousel-wrapper #target-item-1:target~.item-1, 
+    .carousel-wrapper #target-item-2:target~.item-2,
+    .carousel-wrapper #target-item-3:target~.item-3,
+    .carousel-wrapper #target-item-4:target~.item-4, 
+    .carousel-wrapper #target-item-5:target~.item-5,
+    .carousel-wrapper #target-item-6:target~.item-6,
+    .carousel-wrapper #target-item-7:target~.item-7,
+    .carousel-wrapper #target-item-8:target~.item-8,
+    .carousel-wrapper #target-item-9:target~.item-9, 
+    .carousel-wrapper #target-item-10:target~.item-10,
+    .carousel-wrapper #target-item-11:target~.item-11,
+    .carousel-wrapper #target-item-12:target~.item-12{
+        z-index: 3;
+        opacity: 1;
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 1000px;
+
+    }
+
+    .carouimg {
+        width: 80%;
+        margin-left: 10%;
+    }
+    .fermer {
+        color: rgb(88, 87, 87);
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .fermer:hover,
+    .fermer:focus {
+        color: rgb(250, 250, 250);
+        text-decoration: none;
+        cursor: pointer;
+    }
+    #mini a {
+        text-decoration: none;
+    }
+    #mini img{
+        width: 200px;
+        height: 200px;
+    }
+    /******************************* PAGE CONTACT *********************************/
+    .divadd
+    {
+        display: flex
+    }
+    .divadd a
+    {
+        padding-top: 1%;
+    }
+    .divadd div
+    {
+        margin-left:3%;
+    }
+    .iconaddress
+    {
+        height: 50px; 
+    }
+    
+}
