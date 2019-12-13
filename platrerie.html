@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="stylesiteADFM.CSS">
-    <link rel="stylesheet" href="CSSADFMresponsive.CSS">
+    <!-- <link rel="stylesheet" href="CSSADFMresponsive.CSS"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <link href="https://fonts.googleapis.com/css?family=Lato:400,900&display=swap" rel="stylesheet">
     <meta name="keywords"
         content="construction, rénovation, lens, avion, pose de carrelage, plaquiste, electricien, menuisier, couvreur-zingueur">
@@ -19,30 +21,45 @@
 <body>
     <div id="container">
         <div id="header">
-            <img id="logo" src="./imgs/LOGOADFM.png" alt="logo entrepise ADF Bâtiment">
-            <nav>
-                <div class="line"><a href="#menu"><img src="./imgs/mobile bar.png"></a>
-                    <div class="menu">
-                        <ul id="menu">
-                            <li> <a href="./index.html">Accueil</a></li>
-                            <li> <a href="./Qui_sommes_nous.html">ADFM Batiment</a></li>
-                            <li class="dropmain"> <a class="dropbouton" href="./Services.html">Nos services</a>
-                                <div class="dropcontenu">
-                                    <a href="./carrelage.html">Carrelage</a>
-                                    <a href="./maçonnerie.html">Maçonnerie</a>
-                                    <a href="./rénovation.html">Rénovation</a>
-                                    <a href="./platrerie.html">Platrerie</a>
-                                    <a href="./electricite.html">Electricité</a>
-                                    <a href="./menuiserie.html">Menuiserie</a>
-                                </div>
-                            </li>
-                            <li><a href="./Contact.html">Contact</a></li>
-                        </ul>
-                    </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+
+                    <nav class="navbar navbar-expand-md navbar-light ">
+                        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_zone">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="collapse_zone">
+
+                            <a class="navbar-brand"><img id="logo" src="./imgs/LOGOADFM.png"
+                                    alt="logo entrepise ADF Bâtiment" width="180px"></a>
+                            <ul class="navbar-nav " id="menu">
+                                <li class="nav-item"> <a class="nav-link" href="./index.html">Accueil</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="./Qui_sommes_nous.html">ADFM
+                                        Batiment</a></li>
+                                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown"
+                                        data-target="#drop1" href="./Services.html">Nos services
+                                        <span class="caret"></span>
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="drop1">
+                                        <a class="dropdown-item" href="./carrelage.html">Carrelage</a>
+                                        <a class="dropdown-item" href="./maçonnerie.html">Maçonnerie</a>
+                                        <a class="dropdown-item" href="./rénovation.html">Rénovation</a>
+                                        <a class="dropdown-item" href="./platrerie.html">Platrerie</a>
+                                        <a class="dropdown-item" href="./electricite.html">Electricité</a>
+                                        <a class="dropdown-item" a href="./menuiserie.html">Menuiserie</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" href="./Contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+
+
                 </div>
-            </nav>
+            </div>
+
         </div>
-        <div id="sitecontent">
+        <div id="sitecontent" class="col-sm-12">
             <div id="titrelandscape">
                 <h1>Platrerie</h1>
                 <div class="imgtitre"><img src="./img libre de droit/building-1080602_1920bannière.jpg" width="100%"
